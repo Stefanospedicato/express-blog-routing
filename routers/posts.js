@@ -10,8 +10,8 @@ const posts = require('../posts')
   })
 
   //Show
-  router.get('/:title',(req,res)=>{
-    const post = posts.find(post => post.title === req.params.title)
+  router.get('/:slug',(req,res)=>{
+    const post = posts.find(post => post.slug === req.params.slug)
     res.json(post)
   });
 
