@@ -43,4 +43,9 @@ const posts = [
   },
 ];
 
+const express = require('express');
+const app = express();
+const postsRouter = require('./routers/posts');
+const port = 3000
+
 module.exports = posts;
